@@ -15,13 +15,16 @@
   }
 
   @font-face {
-      src: url(assets/fonts/Open_Sans/Open_Sans-Bold.ttf)
+    font-family: 'Open Sans';
+    src: url(assets/fonts/Open_Sans/Open_Sans-Bold.ttf)
   }
 
   @font-face {
+    font-family: 'Open Sans';
     src: url(assets/fonts/Open_Sans/Open_Sans-Regular.ttf)
 }
 
 @font-face {
+    font-family: 'Noto Serif';
     src: url(assets/fonts/NotoSerif/NotoSerif-Regular.ttf)
 }
