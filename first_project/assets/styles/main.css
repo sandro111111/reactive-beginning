@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'Open Sans';
     src: 
         local('Open Sans Regular'), 
@@ -18,8 +18,53 @@
         url('../fonts/Open_Sans/open-sans-v15-latin-regular.woff') format(woff);
     font-weight: normal;
     font-style: normal;
+}*/
+
+html {
+    box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 body {
     font-family: 'Noto Serif', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3A4145;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    width: 80%;
+    max-width: 700px;
+
+    padding-top: 42px;
+    margin: auto;
+}
+
+.menu {
+    padding-left: 0;
+    list-style-type: 0;
+}
+
+.menu__item {
+    display: inline-block;
+}
+
+.menu__item:first-child {
+    margin-right: 20px;
+}
+
+.menu__link {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: #a7b3ba;
+    text-decoration: none;
 }
