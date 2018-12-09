@@ -20,6 +20,11 @@
     font-style: normal;
 }*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -37,6 +42,20 @@ body {
     color: #3A4145;
 }
 
+h2,
+time {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: -1px;
+    text-indent: -2px;
+    color: #3f3f3f
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +66,11 @@ body {
 
     padding-top: 42px;
     margin: auto;
+
+    padding-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
 }
 
 .menu {
@@ -67,5 +91,62 @@ body {
     font-weight: bold;
     font-size: 17px;
     color: #a7b3ba;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    color: blueviolet;
+}
+
+.content {
+    width: 80%;
+    max-width: 700px;
+
+    padding-top: 42px;
+    padding-bottom: 42px;
+    margin: auto;
+}
+
+.post {
+    position: relative;
+
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    border-bottom: 1px solid #a7abb3;
+}
+
+.post::after {
+    position: absolute;
+    left: 50%;
+    bottom: -23px;
+
+    width: 32px;
+    height: 32px;
+
+    background-image: url('../images/bow.svg');
+    background-repeat: no-repeat;
+    background-color: #fff;
+
+    transform: translateX(-50%);
+
+    content: '';
+}
+
+.post__time {
+    font-size: 15px;
+    color: #9eabb3;
+}
+
+.post__title {
+    transition: color 03.s ease;
+}
+
+.post__title:hover {
+    color: #5b77cb;
+}
+
+.post__link {
+    color: currentColor;
     text-decoration: none;
 }
