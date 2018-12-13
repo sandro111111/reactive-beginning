@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
     <body class="page">
         <header class="header">
@@ -134,23 +135,30 @@
 
             <section class="pagging">
                 <a class="pagging__link pagging__link_next" href="">
-                    ← Newer Posts
+                    ? Newer Posts
                 </a>
                 <span class="pagging__number">
                     Page 1 of 13
                 </span>
                 <a class="pagging__link pagging__link_prev" href="">
-                    Older Posts →
+                    Older Posts ?
                 </a>
             </section>
         </main>
 
-        <footer class="content content_footer">
-            <p>
+        <footer class="footer">
+            <div class="footer__icon">
+                <a class="subscribe" href="">
+                    <i class="fas fa-rss subscribe__icon"></i>
+                    <span class="subscribe__tooltip">Subscribe!</span>
+                </a>               
+            </div>
+            
+            <span>
                 All content copyright (C) 2018 Joni Trythall
-            </p>
+            </span>
         </footer>
-
+        
     <script src="/scripts/scripts.js"></script>
     </body>
 </html>

@@ -137,6 +137,11 @@ h2 {
     color: #9eabb3;
 }
 
+.post__title {
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+
 .post__link {
     transition: color 0.3s ease;
 }
@@ -148,10 +153,6 @@ h2 {
 .post__link {
     color: currentColor;
     text-decoration: none;
-}
-
-.content_footer {
-    text-align: center;
 }
 
 .pagging {
@@ -194,4 +195,107 @@ h2 {
 
 .pagging__number {
     line-height: 37px;
+}
+
+.footer {
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 38px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: #bbc7cc;
+
+    background-color: #f9f9f9;
+    border: 1px solid #ebf2f6;
+}
+
+.subscribe {
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    text-decoration: none;
+
+    border: 1px solid #ebf2f6;
+    border-radius: 50%;
+    background-color: #a7abb3;
+
+    transition: box-shadow 0.25;
+}
+
+.subscribe:hover {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.subscribe__icon {
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+    font-size: 12px;
+    color: #d2dee3;
+
+    transition: color 0.5s ease;
+}
+
+.subscribe__icon:hover {
+    color: #5b77ce;
+}
+
+.footer__icon {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+.subscribe__tooltip {
+    position: absolute;
+    top: -23px;
+    left: -20px;
+
+    display: inline-block;
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    font-size: 11px;
+    line-height: 11px;
+    color: rgba(255, 255, 255, 0.9);
+
+    background-color: #50585d;
+    border-radius: 20px;
+
+    transition: opacity 0.3s ease, top 0.3s ease;
+
+    opacity: 0;
+}
+
+.subscribe__tooltip::after {
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+
+    display: block;
+
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #50585d;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+    transform: translateX(-50%);
+
+    content: '';
+}
+
+.subscribe:hover .subscribe__tooltip{
+    top: -31px;
+
+    opacity: 1;
 }
